@@ -9,6 +9,9 @@ import lombok.RequiredArgsConstructor;
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Table(
+        name = "user_table"
+)
 public class User {
     @Id
     @GeneratedValue(
