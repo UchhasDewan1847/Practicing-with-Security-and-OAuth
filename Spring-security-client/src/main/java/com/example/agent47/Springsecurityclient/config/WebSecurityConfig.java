@@ -13,7 +13,12 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfig {
     private static final String[] WHITE_LIST_URLS={
             "/register",
-            "/hello"
+            "/hello",
+            "/verifyRegistration*",
+            "/resendVerifyToken",
+            "/resetPassword",
+            "/savePassword*",
+            "/changePassword"
 
     };
     @Bean
